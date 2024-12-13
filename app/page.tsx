@@ -7,11 +7,11 @@ export default function Home() {
     <main className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="hero-gradient text-white pt-32 pb-20">
-        <div className="container mx-auto px-4">
+        <div className="container flex justify-center items-center text-center">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Get your groceries delivered in 10 minutes</h1>
             <p className="text-xl mb-8 text-white/90">Fresh groceries and everyday essentials delivered right to your doorstep, faster than you can imagine.</p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center items-center">
               <Button size="lg" variant="secondary">Get Started</Button>
               <Button size="lg" variant="outline" className="bg-white/10">Learn More</Button>
             </div>
