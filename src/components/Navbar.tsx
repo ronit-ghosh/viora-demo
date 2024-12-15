@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react';
+import { ArrowDownToLine, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 
@@ -15,7 +15,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          <div className="flex gap-6">
+          <div className="flex gap-3">
             <div className="hidden md:flex items-center space-x-8">
               <a href="/" className="text-gray-700 dark:text-gray-300 hover:text-[#7800ff] dark:hover:text-[#7800ff]">
                 Home
@@ -26,8 +26,15 @@ export default function Navbar() {
               <a href="/team" className="text-gray-700 dark:text-gray-300 hover:text-[#7800ff] dark:hover:text-[#7800ff]">
                 Team
               </a>
+
             </div>
             <div className=""><ThemeToggle /></div>
+            <button
+              onClick={() => alert('App is currently under maintenance. Please check back later!')}
+              className="bg-[#7800ff] text-white px-4 py-1 rounded-xl font-semibold hover:bg-[#6600cc] transition-colors flex justify-center items-center gap-1"
+            >
+              <span className='hidden sm:block'>Download Now</span> <ArrowDownToLine size={18} className='block sm:hidden'/>
+            </button>
 
             <button
               className="md:hidden flex items-center gap-4"

@@ -1,7 +1,7 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { type TeamMember } from '../types';
-import SayakImage from "../images/sayak.png"
+import SayakImage from "../images/sayak.jpg"
 import RonitImage from "../images/ronit.jpg"
 import JoydeepImage from "../images/joydeep.jpeg"
 import ShariqImage from "../images/shariq.jpg"
@@ -82,7 +82,7 @@ export default function TeamCarousel() {
                   {member.role}
                 </p>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Passionate about delivering the best experience to our customers.
+                 {member.desc}
                 </p>
               </div>
             </div>

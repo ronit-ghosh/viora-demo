@@ -63,7 +63,7 @@ export default function Home() {
         <div className="container mx-auto sm:px-4 px-2 z-10 mb-44 md:mb-0">
           <div className="grid md:grid-cols-2 items-center">
             <div>
-              <h1 className="text-5xl text-center md:text-left md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
+              <h1 className="text-5xl text-center md:text-left md:text-6xl font-bold text-gray-900 dark:text-white mb-4 flex flex-col">
                 Kashmir's First
                 <span className="text-[#7800ff]"> 10-Minutes </span>
                 Delivery App
@@ -71,12 +71,12 @@ export default function Home() {
               <p className="text-xl text-gray-600 dark:text-gray-300 md:mb-8 mb-16 md:text-left text-center">
                 <span className='hover:underline cursor-pointer'>Get your groceries delivered in 10 minutes.</span> Fresh groceries and everyday essentials delivered right to your doorstep, faster than you can imagine.
               </p>
-              <div className="mb-6 md:ml-0 ml-2">
-                <div className="flex flex-col gap-1">
+              <div className="mb-6">
+                <div className="w-full">
                   <label 
                   htmlFor="pincode" 
                   className='dark:text-gray-50 text-gray-900 text-sm ml-1'>Check if we are delivering in your area <span className='text-red-500'>*</span></label>
-                  <div className="">
+                  <div className="flex mt-1">
                     <input type="number"
                       id='pincode'
                       placeholder='Enter Pincode'
@@ -94,12 +94,6 @@ export default function Home() {
                   {error}
                 </div>
               </div>
-              <button
-                onClick={() => alert('App is currently under maintenance. Please check back later!')}
-                className="bg-[#7800ff] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#6600cc] transition-colors"
-              >
-                Download Now
-              </button>
             </div>
             <div className="hidden md:block opacity-75">
               <img
