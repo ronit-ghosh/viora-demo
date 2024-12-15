@@ -1,28 +1,32 @@
 import { type TeamMember } from '../types';
+import SayakImage from "../images/sayak.png"
+import RonitImage from "../images/ronit.jpg"
+import JoydeepImage from "../images/joydeep.jpeg"
+import ShariqImage from "../images/shariq.jpg"
 
 const team: TeamMember[] = [
   {
-    name: "Shariq Shokawat Kadla",
-    role: "Founder",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80",
+    name: "Shariq Kadla",
+    role: "Founder / CEO",
+    image: ShariqImage,
     desc: "Visionary leader driving Viora's mission to revolutionize delivery services in Kashmir."
   },
   {
     name: "Ronit Ghosh",
     role: "Backend Developer",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?fit=crop&w=800&q=80",
+    image: RonitImage,
     desc: "Expert in building robust and scalable backend systems."
   },
   {
     name: "Sayak Dey",
     role: "Frontend Developer",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?fit=crop&w=800&q=80",
+    image: SayakImage,
     desc: "Creating beautiful and intuitive user experiences."
   },
   {
     name: "Joydeep Roy",
     role: "Design Head",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fit=crop&w=800&q=80",
+    image: JoydeepImage,
     desc: "Leading the visual and user experience direction of Viora."
   }
 ];

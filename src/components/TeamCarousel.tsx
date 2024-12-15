@@ -5,10 +5,11 @@ import SayakImage from "../images/sayak.png"
 import RonitImage from "../images/ronit.jpg"
 import JoydeepImage from "../images/joydeep.jpeg"
 import ShariqImage from "../images/shariq.jpg"
+
 const team: TeamMember[] = [
   {
-    name: "Shariq Showkat Kadla",
-    role: "Founder",
+    name: "Shariq Kadla",
+    role: "Founder / CEO",
     image: ShariqImage,
     desc: "Visionary leader driving Viora's mission to revolutionize delivery services in Kashmir."
   },
@@ -47,7 +48,7 @@ export default function TeamCarousel() {
   useEffect(() => {
     let interval: number;
     if (autoPlay) {
-      interval = setInterval(nextSlide, 3000);
+      interval = setInterval(nextSlide, 6000);
     }
     return () => clearInterval(interval);
   }, [autoPlay]);

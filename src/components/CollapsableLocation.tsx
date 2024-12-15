@@ -23,10 +23,10 @@ export default function LocationList() {
                     <MapPin className='text-black dark:text-white' />
                 </div>
             ) : (
-                <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg border border-gray-200 dark:border-gray-700 p-4 w-40">
+                <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg border border-gray-200 dark:border-gray-700 p-3 w-52">
                     <div className="flex justify-between items-center mb-2">
-                        <h3 className="font-semibold text-gray-800 dark:text-gray-200">
-                            Our Locations
+                        <h3 className="font-semibold text-gray-800 dark:text-gray-200 whitespace-nowrap">
+                            Currently Delivering in
                         </h3>
                         <button
                             onClick={() => setIsOpen(false)}

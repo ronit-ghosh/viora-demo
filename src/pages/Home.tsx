@@ -72,17 +72,25 @@ export default function Home() {
                 <span className='hover:underline cursor-pointer'>Get your groceries delivered in 10 minutes.</span> Fresh groceries and everyday essentials delivered right to your doorstep, faster than you can imagine.
               </p>
               <div className="mb-6 md:ml-0 ml-2">
-                <input type="number"
-                  placeholder='Enter Pincode'
-                  className='w-1/2 mr-2 rounded-xl text-sm py-2 pl-3 bg-transparent border text-black dark:text-white'
-                  onChange={(e) => setLocation(e.target.value)} />
-                <button
-                  onClick={handleLocation}
-                  className="bg-[#7800ff] text-white text-sm px-2 py-2 rounded-xl font-semibold hover:bg-[#6600cc] transition-colors"
-                >
-                  Check Pincode
-                </button>
-                <div className="text-red-500 ml-2 font-mono h-2">
+                <div className="flex flex-col gap-1">
+                  <label 
+                  htmlFor="pincode" 
+                  className='dark:text-gray-50 text-gray-900 text-sm ml-1'>Check if we are delivering in your area <span className='text-red-500'>*</span></label>
+                  <div className="">
+                    <input type="number"
+                      id='pincode'
+                      placeholder='Enter Pincode'
+                      className='w-2/3 mr-2 rounded-lg text-sm py-2 pl-3 bg-transparent border dark:border-gray-50 border-gray-900 text-black dark:text-white'
+                      onChange={(e) => setLocation(e.target.value)} />
+                    <button
+                      onClick={handleLocation}
+                      className="bg-[#7800ff] text-white text-sm px-2 py-2 rounded-lg font-semibold hover:bg-[#6600cc] transition-colors"
+                    >
+                      Check Pincode
+                    </button>
+                  </div>
+                </div>
+                <div className="text-red-500 ml-2 font-mono h-2 text-xs mt-1">
                   {error}
                 </div>
               </div>
