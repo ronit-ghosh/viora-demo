@@ -10,6 +10,7 @@ export default {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    // Use dynamic import for the plugin
+    import('@tailwindcss/typography').then(m => m.default)
   ],
 };
