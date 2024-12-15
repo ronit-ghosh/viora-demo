@@ -60,18 +60,18 @@ export default function Home() {
             className="w-full h-full object-cover opacity-10"
           />
         </div>
-        <div className="container mx-auto px-4 z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto sm:px-4 px-2 z-10 mb-44 md:mb-0">
+          <div className="grid md:grid-cols-2 items-center">
             <div>
-              <h1 className="text-[2.5rem] text-center md:text-left md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
+              <h1 className="text-5xl text-center md:text-left md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
                 Kashmir's First
                 <span className="text-[#7800ff]"> 10-Minutes </span>
                 Delivery App
               </h1>
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
+              <p className="text-xl text-gray-600 dark:text-gray-300 md:mb-8 mb-16 md:text-left text-center">
                 <span className='hover:underline cursor-pointer'>Get your groceries delivered in 10 minutes.</span> Fresh groceries and everyday essentials delivered right to your doorstep, faster than you can imagine.
               </p>
-              <div className="mb-6">
+              <div className="mb-6 md:ml-0 ml-2">
                 <input type="number"
                   placeholder='Enter Pincode'
                   className='w-1/2 mr-2 rounded-xl text-sm py-2 pl-3 bg-transparent border text-black dark:text-white'
