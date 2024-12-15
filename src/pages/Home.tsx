@@ -4,8 +4,8 @@ import TeamCarousel from '../components/TeamCarousel';
 
 const features: Feature[] = [
   {
-    title: "5-Minutes Delivery",
-    description: "Get your essentials delivered in just 5 minutes across Kashmir",
+    title: "10-Minutes Delivery",
+    description: "Get your essentials delivered in just 10 minutes across Kashmir",
     icon: "Clock"
   },
   {
@@ -43,11 +43,11 @@ export default function Home() {
             <div>
               <h1 className="text-[2.5rem] text-center md:text-left md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
                 Kashmir's First
-                <span className="text-[#7800ff]"> 5-Minutes </span>
+                <span className="text-[#7800ff]"> 10-Minutes </span>
                 Delivery App
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                Get your groceries delivered in 10 minutes. Fresh groceries and everyday essentials delivered right to your doorstep, faster than you can imagine.
+                <span className='hover:underline cursor-pointer'>Get your groceries delivered in 10 minutes.</span> Fresh groceries and everyday essentials delivered right to your doorstep, faster than you can imagine.
               </p>
               <button
                 onClick={() => alert('App is currently under maintenance. Please check back later!')}

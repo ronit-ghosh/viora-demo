@@ -15,7 +15,7 @@ export default function Terms() {
             Service Description
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-            Viora provides a 5-minutes delivery service for groceries and essential items in Kashmir. While we strive to meet this delivery time, actual delivery times may vary based on factors beyond our control.
+            Viora provides a 10-minutes delivery service for groceries and essential items in Kashmir. While we strive to meet this delivery time, actual delivery times may vary based on factors beyond our control.
           </p>
           
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900 dark:text-white">

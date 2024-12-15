@@ -8,7 +8,7 @@ export default function About() {
         
         <div className="max-w-3xl mx-auto prose dark:prose-invert">
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-            Viora is Kashmir's pioneering 5-minutes delivery platform, revolutionizing how people receive their daily essentials. Founded with a vision to make life easier for Kashmir's residents, we've built a network of strategic locations across the region to ensure ultra-fast delivery of groceries and essential items.
+            Viora is Kashmir's pioneering 10-minutes delivery platform, revolutionizing how people receive their daily essentials. Founded with a vision to make life easier for Kashmir's residents, we've built a network of strategic locations across the region to ensure ultra-fast delivery of groceries and essential items.
           </p>
           
           <h2 className="text-2xl font-semibold mt-12 mb-6 text-gray-900 dark:text-white">

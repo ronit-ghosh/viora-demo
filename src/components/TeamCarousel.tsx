@@ -7,7 +7,7 @@ import JoydeepImage from "../images/joydeep.jpeg"
 import ShariqImage from "../images/shariq.jpg"
 const team: TeamMember[] = [
   {
-    name: "Shariq Shokawat Kadla",
+    name: "Shariq Showkat Kadla",
     role: "Founder",
     image: ShariqImage,
     desc: "Visionary leader driving Viora's mission to revolutionize delivery services in Kashmir."
