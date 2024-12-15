@@ -1,6 +1,7 @@
 import { Clock, ShoppingBag, Truck } from 'lucide-react';
 import { type Feature } from '../types';
 import TeamCarousel from '../components/TeamCarousel';
+import { useState } from 'react';
 
 const features: Feature[] = [
   {
@@ -27,6 +28,27 @@ const iconComponents = {
 };
 
 export default function Home() {
+  const [location, setLocation] = useState('')
+  const [error, setError] = useState('')
+  function handleLocation() {
+    if (!location) {
+      setError('You haven\'t entered Pincode')
+      setTimeout(() => {
+        setError('')
+      }, 2500);
+      return
+    } else if (location.length !== 6) {
+      setError('You\'ve entered a wrong pincode')
+      setTimeout(() => {
+        setError('')
+      }, 2500)
+      return
+    } else if (location === '190014' || location === '190005' || location === '190001' || location === '190011' || location === '190008') {
+      alert("We're already serving in your area")
+      return
+    }
+    alert("We're coming into your area soon!")
+  }
   return (
     <div className="bg-white dark:bg-gray-900">
       {/* Hero Section */}
@@ -49,6 +71,21 @@ export default function Home() {
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
                 <span className='hover:underline cursor-pointer'>Get your groceries delivered in 10 minutes.</span> Fresh groceries and everyday essentials delivered right to your doorstep, faster than you can imagine.
               </p>
+              <div className="mb-6">
+                <input type="number"
+                  placeholder='Enter Pincode'
+                  className='w-1/2 mr-2 rounded-xl text-sm py-2 pl-3 bg-transparent border text-black dark:text-white'
+                  onChange={(e) => setLocation(e.target.value)} />
+                <button
+                  onClick={handleLocation}
+                  className="bg-[#7800ff] text-white text-sm px-2 py-2 rounded-xl font-semibold hover:bg-[#6600cc] transition-colors"
+                >
+                  Check Pincode
+                </button>
+                <div className="text-red-500 ml-2 font-mono h-2">
+                  {error}
+                </div>
+              </div>
               <button
                 onClick={() => alert('App is currently under maintenance. Please check back later!')}
                 className="bg-[#7800ff] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#6600cc] transition-colors"

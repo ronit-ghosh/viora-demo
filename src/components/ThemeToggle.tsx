@@ -25,7 +25,7 @@ export default function ThemeToggle() {
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-    const handleChange = (e: any) => {
+    const handleChange = (e: MediaQueryListEvent) => {
       if (localStorage.getItem('theme') === null) {
         setDarkMode(e.matches);
       }

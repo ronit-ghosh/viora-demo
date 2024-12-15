@@ -6,17 +6,13 @@ import Home from './pages/Home';
 import Privacy from './pages/Privacy';
 import Team from './pages/Team';
 import Terms from './pages/Terms';
-import { X } from 'lucide-react';
-import { useState } from 'react';
+import LocationList from './components/CollapsableLocation';
 
 function App() {
-  const [close, setClose] = useState(false)
-  function handleClose(){
-    setClose(true)
-  }
+
   return (
     <>
-      <div className={`fixed z-50 text-white bottom-4 left-4 border border-[#7800ff] hover:border-transparent hover:bg-[#7800ff]/40 px-4 py-2 rounded-3xl ${close ? 'hidden' : 'block'}`}>Currently serving in <span className='font-bold'>Janakpuri</span> <span onClick={handleClose} className={"absolute -top-2 -right-2 x cursor-pointer"}><X size={16} /></span></div>
+      <LocationList />
       <Router>
         <div className="min-h-screen bg-white dark:bg-gray-900">
           <Navbar />
