@@ -24,6 +24,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
               <li>Email: vioranow@gmail.com</li>
+              <li>Insta: viora_now</li>
               <li>Phone: +91 96821 79829</li>
               <li>Kashmir, India</li>
             </ul>
@@ -38,7 +39,7 @@ export default function Footer() {
               <a href="#" className="text-gray-400 hover:text-white">
                 <Twitter />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="https://www.instagram.com/viora_now/" target='_blank' className="text-gray-400 hover:text-white">
                 <Instagram />
               </a>
             </div>
