@@ -48,7 +48,7 @@ export default function TeamCarousel() {
   useEffect(() => {
     let interval: number;
     if (autoPlay) {
-      interval = setInterval(nextSlide, 6000);
+      interval = setInterval(nextSlide, 60000);
     }
     return () => clearInterval(interval);
   }, [autoPlay]);
