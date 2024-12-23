@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <ThemeToggle/>
+            <ThemeToggle />
             <h3 className="text-lg font-semibold my-4">DOWNLOAD APP</h3>
             <div className="space-y-2">
               <Image
