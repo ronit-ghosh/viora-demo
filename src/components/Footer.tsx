@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import { Twitter, Instagram, Linkedin, Sun, Moon } from 'lucide-react'
+import { Twitter, Instagram, Linkedin } from 'lucide-react'
 import PlayStore from "@/images/playstore.svg"
 import AppStore from "@/images/appstore.svg"
 import Image from 'next/image'
