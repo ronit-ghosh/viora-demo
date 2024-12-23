@@ -3,7 +3,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { CartProvider } from '@/components/cart-provider'
 import Header from '@/components/header'
 import './globals.css'
-import Footer from '@/components/footer'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
