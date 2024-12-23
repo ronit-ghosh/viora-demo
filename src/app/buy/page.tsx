@@ -57,4 +57,3 @@ export default function BuyPage() {
     <div className=""></div>
   )
 }
-

@@ -24,7 +24,7 @@ const Places = () => {
             </div>
             <div className="container mx-auto px-4 relative z-10">
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center text-white">
-                    We're Currently Serving in
+                    We&apos;re Currently Serving in
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-xs sm:max-w-2xl lg:max-w-4xl mx-auto">
                     {places.map((place, index) => (
