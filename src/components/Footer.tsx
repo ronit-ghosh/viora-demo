@@ -1,55 +1,77 @@
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+"use client"
+import Link from 'next/link'
+import { Twitter, Instagram, Linkedin, Sun, Moon } from 'lucide-react'
+import PlayStore from "@/images/playstore.svg"
+import AppStore from "@/images/appstore.svg"
+import Image from 'next/image'
+import ThemeToggle from './theme-toggle'
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
-    <footer className="dark:bg-gray-900 bg-gray-50 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="border-t">
+      <div className="container mx-auto md:px-44 px-5 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-50">Viora</h3>
-            <p className="dark:text-gray-400 text-gray-600">Kashmir's 10-minutes delivery app</p>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-50">Quick Links</h4>
-            <ul className="space-y-2 ">
-              <li><a href="/about" className="hover:text-white dark:text-gray-400 text-gray-600">About Us</a></li>
-              <li><a href="/team" className="hover:text-white dark:text-gray-400 text-gray-600">Our Team</a></li>
-              <li><a href="/privacy" className="hover:text-white dark:text-gray-400 text-gray-600">Privacy Policy</a></li>
-              <li><a href="/terms" className="hover:text-white dark:text-gray-400 text-gray-600">Terms of Service</a></li>
+            <h3 className="text-lg font-semibold mb-4">ABOUT VIORA</h3>
+            <ul className="space-y-2">
+              <li><Link href="/about">Who are we</Link></li>
+              <li><Link href="/careers">Work with us</Link></li>
+              <li><Link href="/report-fraud">Report fraud</Link></li>
+              <li><Link href="/contact">Contact us</Link></li>
             </ul>
           </div>
-
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-50">Contact</h4>
-            <ul className="space-y-2 dark:text-gray-400 text-gray-600">
-              <li>Office: Soura, Srinagar</li>
-              <li>Phone: +91 96821 79829</li>
-              <li>Email: vioranow@gmail.com</li>
-              <li>Insta: viora_now</li>
+            <h3 className="text-lg font-semibold mb-4">LEGAL</h3>
+            <ul className="space-y-2">
+              <li><Link href="/privacy">Privacy</Link></li>
+              <li><Link href="/security">Security</Link></li>
+              <li><Link href="/terms">Terms & Conditions</Link></li>
             </ul>
           </div>
-
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-50">Follow Us</h4>
+            <h3 className="text-lg font-semibold mb-4">SOCIAL LINKS</h3>
             <div className="flex space-x-4">
-              <a href="#" className="dark:text-gray-400 text-gray-600">
-                <Facebook />
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Instagram />
               </a>
-              <a href="#" className="dark:text-gray-400 text-gray-600">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <Twitter />
               </a>
-              <a href="https://www.instagram.com/viora_now/" target='_blank' className="dark:text-gray-400 text-gray-600 hover:text-white">
-                <Instagram />
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin />
               </a>
             </div>
           </div>
+          <div>
+            <ThemeToggle/>
+            <h3 className="text-lg font-semibold my-4">DOWNLOAD APP</h3>
+            <div className="space-y-2">
+              <Image
+                src={AppStore}
+                alt="Download on App Store"
+                width={135}
+                height={40}
+                className='cursor-pointer'
+                onClick={() => alert('hi')}
+              />
+              <Image
+                src={PlayStore}
+                alt="Get it on Google Play"
+                width={135}
+                height={40}
+                className='cursor-pointer'
+                onClick={() => alert('hi')}
+              />
+            </div>
+          </div>
         </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 dark:text-gray-400 text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Viora. All rights reserved.</p>
+        <div className="mt-8 text-sm text-gray-600 dark:text-gray-400">
+          By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. {currentYear} © Viora™ Ltd. All rights reserved.
         </div>
       </div>
     </footer>
-  );
+  )
 }
+
