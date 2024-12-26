@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import KashmirImage from "@/images/kashmir.jpeg"
 
 const Places = () => {
     const places = [
@@ -15,7 +14,7 @@ const Places = () => {
         <section className="py-8 md:py-16 relative min-h-[400px] md:h-[500px]">
             <div className="absolute inset-0 z-0 bg-black">
                 <Image
-                    src={KashmirImage}
+                    src="https://res.cloudinary.com/drynqkitl/image/upload/v1735236698/kashmir_u07vej.jpg"
                     alt="Google Maps"
                     fill
                     style={{ objectFit: 'cover' }}
@@ -30,7 +29,7 @@ const Places = () => {
                     {places.map((place, index) => (
                         <div 
                             key={index} 
-                            className="backdrop-blur-md bg-white/50 dark:bg-gray-800/50 p-4 md:p-6 rounded-lg shadow-xl hover:scale-105 transition-all ease-in-out duration-150 cursor-pointer"
+                            className="bg-white/50 dark:bg-gray-800/50 p-4 md:p-6 rounded-lg shadow-xl hover:scale-105 transition-all ease-in-out duration-150 cursor-pointer"
                         >
                             <h3 className="text-lg md:text-xl font-semibold text-center">
                                 {place.name}

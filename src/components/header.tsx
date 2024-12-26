@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ShoppingCart, Menu, X } from 'lucide-react'
+import { ShoppingCart, Menu, X, Download } from 'lucide-react'
 import { useCart } from './cart-provider'
 import Image from 'next/image'
 import Logo from "@/images/Viora.svg"
@@ -10,12 +10,6 @@ import Logo from "@/images/Viora.svg"
 export default function Header() {
   const { cart } = useCart()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [showAppModal, setShowAppModal] = useState(false)
-
-  const handleDownloadApp = () => {
-    setShowAppModal(true)
-    setTimeout(() => setShowAppModal(false), 3000)
-  }
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/30 dark:bg-gray-800/30">
@@ -36,19 +30,23 @@ export default function Header() {
               <li>
                 <Link href="/cart" className="flex items-center">
                   <ShoppingCart className="mr-1" />
-                  <span>{cart.reduce((sum, item) => sum + item.quantity, 0)}</span>
+                  {/* <span>{cart.reduce((sum, item) => sum + item.quantity, 0)}</span> */}
                 </Link>
               </li>
-              <li><Button variant="ghost" onClick={() => { }}>Sign Up</Button></li>
-              <li><Button variant="ghost" onClick={() => { }}>Login</Button></li>
-              <li><Button onClick={handleDownloadApp}>Download App</Button></li>
+              {/* <li><Button variant="ghost" onClick={() => { }}>Sign Up</Button></li>
+              <li><Button variant="ghost" onClick={() => { }}>Login</Button></li> */}
+              <li><Link href={'/download'}>
+                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-4 font-medium hover:text-[#7800ff] text-neutral-300 transition-colors ">
+                  Download App
+                </button>
+              </Link> </li>
             </ul>
           </nav>
           <div className="md:hidden flex items-center">
-            <Button onClick={handleDownloadApp} className="mr-2">Download App</Button>
+            <Link href={'/download'}><Button className="mr-2"><Download /></Button></Link>
             <Link href="/cart" className="flex items-center">
               <ShoppingCart className="mr-1" />
-              <span>({cart.reduce((sum, item) => sum + item.quantity, 0)})</span>
+              {/* <span>({cart.reduce((sum, item) => sum + item.quantity, 0)})</span> */}
             </Link>
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X /> : <Menu />}
@@ -65,13 +63,6 @@ export default function Header() {
           </nav>
         )}
       </div>
-      {showAppModal && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <p className="text-lg font-semibold">App Under Development</p>
-          </div>
-        </div>
-      )}
     </header>
   )
 }

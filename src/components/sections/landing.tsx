@@ -1,9 +1,12 @@
 import Image from 'next/image'
-import BackgroundImage from '@/images/bg.jpg'
 import { Cover } from '@/components/ui/cover'
 import { PlaceholdersAndVanishInput } from '@/components/ui/placeholders-and-vanish-input'
+import { useState } from 'react'
+import { toast } from 'react-toastify'
 
 const Landing = () => {
+    const [location, setLocation] = useState('')
+    const [error, setError] = useState('')
     const placeholders = [
         "Hyderpora",
         "Sanatnagar",
@@ -12,18 +15,48 @@ const Landing = () => {
         "Jawaharnagar",
         "Raibagh",
     ];
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(e.target.value);
-    };
-    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        console.log("submitted");
-    };
+    function handleLocation() {
+        if (!location) {
+            setError('You haven\'t entered Pincode')
+            setTimeout(() => {
+                setError('')
+            }, 2500);
+            return
+        } else if (location.length !== 6) {
+            setError('Enter a correct pincode')
+            setTimeout(() => {
+                setError('')
+            }, 2500)
+            return
+        } else if (location === '190014' || location === '190005' || location === '190001' || location === '190011' || location === '190008') {
+            toast("🔍 We're already serving in your area", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            })
+            return
+        }
+        toast("👋 We're coming into your area soon!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        })
+    }
 
     return (
         <section className="relative h-screen flex items-center bg-black">
             <Image
-                src={BackgroundImage}
+                src="https://res.cloudinary.com/drynqkitl/image/upload/v1735236697/bg_qbipqd.jpg"
                 alt="Viora Delivery"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -37,14 +70,14 @@ const Landing = () => {
                     <span> Delivery App</span>
                 </div>
                 <h2 className="mt-10 text-center text-white font-sans font-bold text-md mb-1 capitalize">
-                   enter pincode Check if we are delivering in your area <span className='text-red-500'>*</span>
+                    enter pincode Check if we are delivering in your area <span className='text-red-500'>*</span>
                 </h2>
+                <div className="text-center text-red-500 font-mono h-6">{error}</div>
                 <div className="flex gap-2">
-
                     <PlaceholdersAndVanishInput
                         placeholders={placeholders}
-                        onChange={handleChange}
-                        onSubmit={onSubmit}
+                        onChange={(e) => setLocation(e.target.value)}
+                        onSubmit={handleLocation}
                     />
                 </div>
             </div>

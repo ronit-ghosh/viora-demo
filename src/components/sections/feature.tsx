@@ -1,24 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
-import TenMinDelivery from "@/images/10mindelivery.jpeg"
-import GroceryEssentials from "@/images/groceryessentials.jpeg"
-import RealtimeTracking from "@/images/realtimetracking.jpeg"
 const Feature = () => {
     const features = [
         {
             title: "10-Minutes Delivery",
             description: "Get your essentials delivered in just 10 minutes across Kashmir",
-            image: TenMinDelivery
+            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735236698/10mindelivery_hrnvua.jpg"
         },
         {
             title: "Wide Selection",
             description: "From groceries to daily essentials, find everything you need",
-            image: GroceryEssentials
+            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735236697/groceryessentials_hsuxbe.jpg"
         },
         {
             title: "Real-time Tracking",
             description: "Track your delivery in real-time with our advanced system",
-            image: RealtimeTracking
+            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735236698/realtimetracking_b43vje.jpg"
         }
     ]
     return (

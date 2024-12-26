@@ -26,14 +26,14 @@ export function ProductCard({ id, name, price, image }: ProductCardProps) {
           src={image}
           alt={name}
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           className="transition-transform duration-300 ease-in-out hover:scale-105"
         />
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold mb-2">{name}</h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">${price.toFixed(2)}</p>
-        <Button 
+        <p className="text-gray-600 dark:text-gray-300 mb-4">₹ {price.toFixed(2)}</p>
+        <Button
           onClick={handleAddToCart}
           className="w-full"
           variant={isAdded ? "secondary" : "default"}
