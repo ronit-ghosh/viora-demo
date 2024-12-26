@@ -56,7 +56,6 @@ export default function Footer() {
                   width={135}
                   height={40}
                   className='cursor-pointer'
-                  onClick={() => alert('hi')}
                 />
               </Link>
               <Link href={'/download'}>
@@ -66,7 +65,6 @@ export default function Footer() {
                   width={135}
                   height={40}
                   className='cursor-pointer'
-                  onClick={() => alert('hi')}
                 />
               </Link>
             </div>
