@@ -137,10 +137,10 @@ export const Cover = ({
       >
         {children}
       </motion.span>
-      <CircleIcon className="absolute -right-[2px] -top-[2px]" />
+      {/* <CircleIcon className="absolute -right-[2px] -top-[2px]" />
       <CircleIcon className="absolute -bottom-[2px] -right-[2px]" delay={0.4} />
       <CircleIcon className="absolute -left-[2px] -top-[2px]" delay={0.8} />
-      <CircleIcon className="absolute -bottom-[2px] -left-[2px]" delay={1.6} />
+      <CircleIcon className="absolute -bottom-[2px] -left-[2px]" delay={1.6} /> */}
     </div>
   );
 };
@@ -210,19 +210,19 @@ export const Beam = ({
   );
 };
 
-export const CircleIcon = ({
-  className,
-  delay,
-}: {
-  className?: string;
-  delay?: number;
-}) => {
-  return (
-    <div
-      className={cn(
-        `pointer-events-none animate-pulse group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-1000 group-hover/cover:bg-white`,
-        className
-      )}
-    ></div>
-  );
-};
+// export const CircleIcon = ({
+//   className,
+//   delay,
+// }: {
+//   className?: string;
+//   delay?: number;
+// }) => {
+//   return (
+//     <div
+//       className={cn(
+//         `pointer-events-none animate-pulse group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-1000 group-hover/cover:bg-white`,
+//         className
+//       )}
+//     ></div>
+//   );
+// };

@@ -1,7 +1,23 @@
 import Image from 'next/image'
-import { SweetToothSection } from '@/components/products/sweet-tooth-section'
+import { SweetToothSection } from '@/components/products/SweetToothSection'
 import { Meteors } from '@/components/ui/meteors'
-import Header from '@/components/header'
+import { DairyBreadSection } from '../products/DairyBreadSection'
+import { FruitsVegSection } from '../products/FruitsVegSection'
+import { DrinksSection } from '../products/DrinksSection'
+import { SnacksSection } from '../products/SnacksSection'
+import { BreakfastSection } from '../products/BreakfastSection'
+import { StaplesSection } from '../products/StaplesSection'
+import { BakerySection } from '../products/BakerySection'
+import { BeverageSection } from '../products/BeverageSection'
+import { MasalaSection } from '../products/MasalaSection'
+import { SaucesSection } from '../products/SaucesSection'
+import { OrganicSection } from '../products/OrganicSection'
+import { BabyCareSection } from '../products/BabyCareSection'
+import { PharmaSection } from '../products/PharmaSection'
+import { CleaningSection } from '../products/CleaningSection'
+import { HomeSection } from '../products/HomeSection'
+import { PersonalCareSection } from '../products/PersonalCareSection'
+import { PetCareSection } from '../products/PetCareSection'
 
 const categories = [
   { name: "Dairy & Bread & Eggs", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245230/dairy-milk-bread_awudzj.jpg" },
@@ -27,14 +43,13 @@ const categories = [
 export default function BuyPage() {
   return (
     <>
-      <Header />
       <div className="container mx-auto px-4 py-8">
         {/* Banner */}
         <div className="">
           <div className="w-full relative mb-12">
             <div className="absolute inset-0 h-full w-full  rounded-full blur-3xl" />
             <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-centerr">
-              <h1 className="font-bold text-xl text-white relative z-50 flex justify-center ">
+              <h1 className="font-bold text-xl text-white relative z-10 flex justify-center ">
                 Delivering Holiday Cheer: Enjoy 25% off your first order this Christmas!
               </h1>
               <Meteors number={40} />
@@ -47,7 +62,7 @@ export default function BuyPage() {
         <h2 className="text-2xl font-bold mb-4">Categories</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
           {categories.map((category, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+            <div key={index} className="bg-white cursor-pointer dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
               <Image
                 src={category.image}
                 alt={category.name}
@@ -62,8 +77,25 @@ export default function BuyPage() {
           ))}
         </div>
 
-        {/* Sweet Tooth Section */}
-        <SweetToothSection />
+        {/* ProductsSection */}
+        <DairyBreadSection />
+        <FruitsVegSection/>
+        <DrinksSection/>
+        <SnacksSection/>
+        <BreakfastSection/>
+        <SweetToothSection/>
+        <BakerySection/>
+        <BeverageSection/>
+        <StaplesSection/>
+        <MasalaSection/>
+        <SaucesSection/>
+        <OrganicSection/>
+        <BabyCareSection/>
+        <PharmaSection/>
+        <CleaningSection/>
+        <HomeSection/>
+        <PersonalCareSection/>
+        <PetCareSection/>
       </div>
     </>
   )

@@ -10,7 +10,7 @@ import Logo from "@/images/Viora.svg"
 export default function Header() {
   const { cart } = useCart()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
+  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0)
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/30 dark:bg-gray-800/30">
       <div className="container mx-auto px-4 py-4">
@@ -30,7 +30,7 @@ export default function Header() {
               <li>
                 <Link href="/cart" className="flex items-center">
                   <ShoppingCart className="mr-1" />
-                  {/* <span>{cart.reduce((sum, item) => sum + item.quantity, 0)}</span> */}
+                  <span className={`animate-bounce ${cartCount ===  0 ? 'sr-only': ''}`}>{cartCount}</span>
                 </Link>
               </li>
               {/* <li><Button variant="ghost" onClick={() => { }}>Sign Up</Button></li>
@@ -46,7 +46,7 @@ export default function Header() {
             <Link href={'/download'}><Button className="mr-2"><Download /></Button></Link>
             <Link href="/cart" className="flex items-center">
               <ShoppingCart className="mr-1" />
-              {/* <span>({cart.reduce((sum, item) => sum + item.quantity, 0)})</span> */}
+              <span className={`animate-bounce ${cartCount ===  0 ? 'sr-only': ''}`}>{cartCount}</span>
             </Link>
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X /> : <Menu />}

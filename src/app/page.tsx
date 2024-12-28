@@ -3,12 +3,11 @@
 import Landing from '@/components/sections/landing'
 import Feature from '@/components/sections/feature'
 import Faq from '@/components/sections/faq'
-import Places from '@/components/sections/places'
 import Download from '@/components/sections/download'
-import FloatingButton from '@/components/floating-button'
 import Header from '@/components/header'
 import Footer from '@/components/Footer'
 import { ToastContainer } from 'react-toastify'
+import BuyPage from '@/components/sections/Buy'
 
 export default function Home() {
 
@@ -27,12 +26,11 @@ export default function Home() {
         theme="colored"
       />
       <Header />
-      <FloatingButton />
+      <BuyPage />
       <Landing />
-      <Feature />
-      <Places />
       <Download />
       <Faq />
+      <Feature />
       <Footer />
     </>
   )

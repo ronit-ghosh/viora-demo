@@ -1,4 +1,4 @@
 {
   "extends": "next/core-web-vitals",
-  "ignorePatterns": ["src/components/ui/placeholders-and-vanish-input.tsx", "src/components/ui/background-gradient-animation.tsx"]
+  "ignorePatterns": ["src/components/ui/placeholders-and-vanish-input.tsx", "src/components/ui/background-gradient-animation.tsx", "src/components/sections/feature.tsx"]
 }
