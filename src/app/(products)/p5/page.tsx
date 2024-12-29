@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const cleaningProducts = [
     { id: 25, name: 'Surf Excel 4kg', price: 549, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396581/Surf_Excel_4kg_qfzvd0.jpg' },
@@ -9,7 +9,7 @@ const cleaningProducts = [
     { id: 30, name: 'Comfort Fabric Conditioner 1L', price: 220, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396581/Comfort_Fabric_Conditioner_1L_grpf6z.jpg' },
   ]
   
-  export function CleaningSection() {
+  export default function CleaningSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Cleaning Essentials" products={cleaningProducts} />

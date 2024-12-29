@@ -50,17 +50,17 @@ Total: ₹${total.toFixed(2)}
                       <Button
                         variant="outline"
                         size="icon"
-                        className="h-8 w-8"
+                        className="h-6 w-6"
                         onClick={() => updateQuantity(item.id, item.quantity - 1)}
                         disabled={item.quantity <= 1}
                       >
                         <Minus className="h-4 w-4" />
                       </Button>
-                      <span className="w-8 text-center">{item.quantity}</span>
+                      <span className="w-4 text-center">{item.quantity}</span>
                       <Button
                         variant="outline"
                         size="icon"
-                        className="h-8 w-8"
+                        className="h-6 w-6"
                         onClick={() => updateQuantity(item.id, item.quantity + 1)}
                       >
                         <Plus className="h-4 w-4" />

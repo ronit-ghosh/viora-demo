@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const snacksProducts = [
   { id: 91, name: 'Lay\'s Classic 90g', price: 40, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396591/Lays_Classic_90g_d9ymb4.jpg' },
@@ -9,7 +9,7 @@ const snacksProducts = [
   { id: 96, name: 'Doritos Nacho 70g', price: 50, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396590/Doritos_Nacho_70g_jdg3ff.jpg' },
 ]
 
-export function SnacksSection() {
+export default function SnacksSection() {
   return (
     <div className="container mx-auto px-4">
       <ProductCarousel title="Snacks & Munchies" products={snacksProducts} />

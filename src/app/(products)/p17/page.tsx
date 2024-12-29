@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const stapleProducts = [
     { id: 97, name: 'Aashirvaad Atta 5kg', price: 275, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396591/Aashirvaad_Atta_5kg_qu8rqi.jpg' },
@@ -9,7 +9,7 @@ const stapleProducts = [
     { id: 102, name: 'Sona Masoori Rice 5kg', price: 325, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396592/Sona_Masoori_Rice_5kg_k7m3iv.jpg' },
   ]
   
-  export function StaplesSection() {
+  export default function StaplesSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Atta, Rice & Dal" products={stapleProducts} />

@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const drinksProducts = [
     { id: 37, name: 'Coca Cola 2L', price: 95, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396581/Coca_Cola_2L_ljxrxp.jpg' },
@@ -9,7 +9,7 @@ const drinksProducts = [
     { id: 42, name: 'Maaza 1L', price: 70, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396582/Maaza_1L_q908hy.jpg' },
   ]
   
-  export function DrinksSection() {
+  export default function DrinksSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Cold Drinks & Juices" products={drinksProducts} />

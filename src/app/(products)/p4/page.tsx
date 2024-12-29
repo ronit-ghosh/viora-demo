@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const breakfastProducts = [
     { id: 19, name: 'Maggi 4 Pack', price: 48, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396580/Maggi_4_Pack_qddu8i.jpg' },
@@ -9,7 +9,7 @@ const breakfastProducts = [
     { id: 24, name: 'Top Ramen 4 Pack', price: 80, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396580/Top_Ramen_4_Pack_ozd2ti.jpg' },
   ]
   
-  export function BreakfastSection() {
+  export default function BreakfastSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Breakfast & Instant Food" products={breakfastProducts} />

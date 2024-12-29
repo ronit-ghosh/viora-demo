@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const homeProducts = [
     { id: 49, name: 'Good Knight Gold Flash', price: 72, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396584/Good_Knight_Gold_Flash_hjzggs.jpg' },
@@ -9,7 +9,7 @@ const homeProducts = [
     { id: 54, name: 'Mortein Coil 10pc', price: 40, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396584/Mortein_Coil_10pc_belovh.webp' },
 ]
 
-export function HomeSection() {
+export default function HomeSection() {
     return (
         <div className="container mx-auto px-4">
             <ProductCarousel title="Cleaning Essentials" products={homeProducts} />

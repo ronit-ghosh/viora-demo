@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const personalCareProducts = [
     { id: 67, name: 'Dove Soap 3x75g', price: 135, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396587/Dove_Soap_3x75g_wexxpe.jpg' },
@@ -9,7 +9,7 @@ const personalCareProducts = [
     { id: 72, name: 'Lakme Face Wash 100g', price: 185, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396587/Lakme_Face_Wash_100g_yqy8at.jpg' },
   ]
   
-  export function PersonalCareSection() {
+  export default function PersonalCareSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Personal Care" products={personalCareProducts} />

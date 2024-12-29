@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const pharmaProducts = [
     { id: 79, name: 'Dettol Antiseptic 550ml', price: 195, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396589/Dettol_Antiseptic_550ml_grfwbt.jpg' },
@@ -9,7 +9,7 @@ const pharmaProducts = [
     { id: 84, name: 'Volini Spray 100g', price: 245, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396589/Volini_Spray_100g_alyqio.jpg' },
   ]
   
-  export function PharmaSection() {
+  export default function PharmaSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Pharma & Wellness" products={pharmaProducts} />

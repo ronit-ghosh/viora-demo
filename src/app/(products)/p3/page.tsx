@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const beverageProducts = [
     { id: 13, name: 'Tata Tea Premium 500g', price: 260, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396579/Tata_Tea_Premium_500g_tlaisz.webp' },
@@ -9,7 +9,7 @@ const beverageProducts = [
     { id: 18, name: 'Boost 500g', price: 235, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396578/Boost_500g_tgui9h.jpg' },
   ]
   
-  export function BeverageSection() {
+  export default function BeverageSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Tea, Coffee & Health Drink" products={beverageProducts} />

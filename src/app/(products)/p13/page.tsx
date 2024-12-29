@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const petCareProducts = [
     { id: 73, name: 'Pedigree Adult Dog Food 3kg', price: 699, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396588/Pedigree_Adult_Dog_Food_3kg_lhuokq.jpg' },
@@ -9,7 +9,7 @@ const petCareProducts = [
     { id: 78, name: 'Pet Lovers Crunch 1kg', price: 299, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396588/Pet_Lovers_Crunch_1kg_bwbqg5.jpg' },
   ]
   
-  export function PetCareSection() {
+  export default function PetCareSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Pet Care" products={petCareProducts} />

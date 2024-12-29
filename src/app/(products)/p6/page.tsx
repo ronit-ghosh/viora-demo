@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const dairyProducts = [
     { id: 31, name: 'Amul Milk 500ml', price: 25, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735388276/amul_milk_efc9wr.webp' },
@@ -9,7 +9,7 @@ const dairyProducts = [
     { id: 36, name: 'Mother Dairy Curd', price: 45, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735388277/Mother_Dairy_Curd_kvvg4k.jpg' },
   ]
   
-  export function DairyBreadSection() {
+  export default function DairyBreadSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Dairy, Bread & Eggs" products={dairyProducts} />

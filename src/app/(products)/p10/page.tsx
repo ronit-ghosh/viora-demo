@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const masalaProducts = [
     { id: 55, name: 'Fortune Sunflower Oil 1L', price: 155, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396585/Fortune_Sunflower_Oil_1L_yykwjd.jpg' },
@@ -9,7 +9,7 @@ const masalaProducts = [
     { id: 60, name: 'Tata Salt 1kg', price: 24, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396585/Tata_Salt_1kg_tumbg6.jpg' },
   ]
   
-  export function MasalaSection() {
+  export default function MasalaSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Masala, Oil & More" products={masalaProducts} />

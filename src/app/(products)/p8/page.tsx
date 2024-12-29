@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const fruitsVegProducts = [
     { id: 43, name: 'Fresh Onions 1kg', price: 40, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396583/Fresh_Onions_1kg_wf6hta.jpg' },
@@ -9,7 +9,7 @@ const fruitsVegProducts = [
     { id: 48, name: 'Sweet Lime 500g', price: 65, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396583/Sweet_Lime_500g_vyjt7z.jpg' },
   ]
   
-  export function FruitsVegSection() {
+  export default function FruitsVegSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Fruits & Vegetables" products={fruitsVegProducts} />

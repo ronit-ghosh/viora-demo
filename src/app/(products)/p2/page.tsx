@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const bakeryProducts = [
     { id: 7, name: 'Parle-G Gold 1kg', price: 140, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396577/Parle-G_Gold_1kg_e20w71.jpg' },
@@ -9,7 +9,7 @@ const bakeryProducts = [
     { id: 12, name: 'Jim Jam 100g', price: 35, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396578/Jim_Jam_100g_vtgok7.jpg' },
   ]
   
-  export function BakerySection() {
+  export default function BakerySection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Bakery & Biscuits" products={bakeryProducts} />

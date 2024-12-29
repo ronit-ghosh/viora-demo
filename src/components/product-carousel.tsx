@@ -51,14 +51,16 @@ export function ProductCarousel({ title, products }: ProductCarouselProps) {
 
   return (
     <div className="my-8">
-      <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <Slider {...settings}>
-        {products.map(product => (
-          <div key={product.id} className="px-2">
-            <ProductCard {...product} />
-          </div>
-        ))}
-      </Slider>
+      <h2 className="text-2xl font-bold mb-4 text-center">{title}</h2>
+      <div className="px-8">
+        <Slider {...settings}>
+          {products.map(product => (
+            <div key={product.id} className="px-2">
+              <ProductCard {...product} />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   )
 }

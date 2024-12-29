@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const saucesProducts = [
   { id: 85, name: 'Kissan Tomato Ketchup 1kg', price: 140, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396589/Kissan_Tomato_Ketchup_1kg_gwor1l.jpg' },
@@ -9,7 +9,7 @@ const saucesProducts = [
   { id: 90, name: 'Smith & Jones Pasta Masala 40g', price: 35, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396590/Smith_Jones_Pasta_Masala_40g_jrt8st.jpg' },
 ]
 
-export function SaucesSection() {
+export default function SaucesSection() {
   return (
     <div className="container mx-auto px-4">
       <ProductCarousel title="Sauces & Spices" products={saucesProducts} />

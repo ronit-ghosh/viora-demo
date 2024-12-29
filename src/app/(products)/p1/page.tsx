@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const babyCareProducts = [
     { id: 1, name: 'Pampers Diapers L 50pcs', price: 899, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396578/Pampers_Diapers_L_50pcs_d3gugc.webp' },
@@ -9,9 +9,9 @@ const babyCareProducts = [
     { id: 6, name: 'Johnson\'s Baby Oil 200ml', price: 165, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396577/Johnsons_Baby_Powder_400g_gpszvn.jpg' },
   ]
   
-  export function BabyCareSection() {
+  export default function BabyCareSection() {
     return (
-      <div className="container mx-auto px-4">
+      <div>
         <ProductCarousel title="Baby Care" products={babyCareProducts} />
       </div>
     )

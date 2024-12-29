@@ -1,4 +1,4 @@
-import { ProductCarousel } from "../product-carousel"
+import { ProductCarousel } from "@/components/product-carousel"
 
 const organicProducts = [
     { id: 61, name: 'Organic Tattva Quinoa 500g', price: 299, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396586/Organic_Tattva_Quinoa_500g_ao4w1x.jpg' },
@@ -9,7 +9,7 @@ const organicProducts = [
     { id: 66, name: 'Urban Platter Chia Seeds 400g', price: 299, image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735396586/Urban_Platter_Chia_Seeds_400g_nyicw9.jpg' },
   ]
   
-  export function OrganicSection() {
+  export default function OrganicSection() {
     return (
       <div className="container mx-auto px-4">
         <ProductCarousel title="Organic & Healthy Living" products={organicProducts} />

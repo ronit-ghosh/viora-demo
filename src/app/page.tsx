@@ -26,8 +26,8 @@ export default function Home() {
         theme="colored"
       />
       <Header />
-      <BuyPage />
       <Landing />
+      <BuyPage />
       <Download />
       <Faq />
       <Feature />
@@ -35,4 +35,3 @@ export default function Home() {
     </>
   )
 }
-
