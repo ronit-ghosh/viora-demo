@@ -9,7 +9,7 @@ const teamMembers = [
   },
   {
     name: 'Ronit Ghosh',
-    role: 'CTO / Backend Developer',
+    role: 'Backend Developer',
     description: 'Expert in building robust and scalable backend systems.',
     image: 'https://res.cloudinary.com/drynqkitl/image/upload/v1735237500/ronit_bvhgot.png'
   },

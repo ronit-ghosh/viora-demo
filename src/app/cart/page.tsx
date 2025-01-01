@@ -22,7 +22,8 @@ export default function CartPage() {
 I want to buy
 ${cartItemMessage()}
 Total: ₹${total.toFixed(2)}
-
+__________
+My address: 
 `
 
   return (
