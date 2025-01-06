@@ -17,12 +17,12 @@ const Feature = () => {
         {
             title: "10-Minutes Delivery",
             description: "Get your essentials delivered in just 10 minutes across Kashmir",
-            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735236698/10mindelivery_hrnvua.jpg"
+            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1736188917/10mindelivery_hrnvua.jpg"
         },
         {
             title: "Wide Selection",
             description: "From groceries to daily essentials, find everything you need",
-            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735236697/groceryessentials_hsuxbe.jpg"
+            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1736188929/groceryessentials_hsuxbe.jpg"
         },
         {
             title: "Real-time Tracking",
