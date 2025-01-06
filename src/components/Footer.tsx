@@ -18,6 +18,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/about">Who are we</Link></li>
               <li><Link href="/team">Our Team</Link></li>
+              <li><Link href="/faq">FAQ</Link></li>
               <li><Link href="/careers">Work with us</Link></li>
               <li><Link href="/report-fraud">Report fraud</Link></li>
             </ul>

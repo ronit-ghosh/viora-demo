@@ -12,7 +12,7 @@ const homeProducts = [
 export default function HomeSection() {
     return (
         <div className="container mx-auto px-4">
-            <ProductCarousel title="Cleaning Essentials" products={homeProducts} />
+            <ProductCarousel title="Home & Office Essentials" products={homeProducts} />
         </div>
     )
 }

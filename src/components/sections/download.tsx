@@ -9,7 +9,7 @@ import Link from 'next/link'
 const Download = () => {
     const [email, setEmail] = useState('')
     return (
-        <section className="py-16 bg-muted">
+        <section className="py-16 ">
             <div className="container mx-auto md:px-48 px-4">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                     <div className="flex-1">

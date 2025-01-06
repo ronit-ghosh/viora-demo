@@ -2,7 +2,6 @@
 
 import Landing from '@/components/sections/landing'
 import Feature from '@/components/sections/feature'
-import Faq from '@/components/sections/faq'
 import Download from '@/components/sections/download'
 import Header from '@/components/header'
 import Footer from '@/components/Footer'
@@ -29,7 +28,6 @@ export default function Home() {
       <Landing />
       <BuyPage />
       <Download />
-      <Faq />
       <Feature />
       <Footer />
     </>

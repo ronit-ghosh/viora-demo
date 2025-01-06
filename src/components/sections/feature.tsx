@@ -44,7 +44,7 @@ const Feature = () => {
     }, [])
 
     return (
-        <section className="py-16 bg-muted">
+        <section className="py-16">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-8 text-center">Our Features</h2>
                 <div ref={carouselRef}>
