@@ -3,12 +3,12 @@ import { Meteors } from '@/components/ui/meteors'
 import Link from 'next/link';
 
 const categories = [
+  { name: "Dairy & Bread & Eggs", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245230/dairy-milk-bread_awudzj.jpg", route: "p6" },
   { name: "Baby Care", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245232/Baby_Care_gpexcw.jpg", route: "p1" },
   { name: "Bakery & Biscuits", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245229/Bakery_Biscuits_mxybqt.avif", route: "p2" },
   { name: "Breakfast & Instant Food", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245231/Breakfast_Instant_Food_n4ugcg.jpg", route: "p4" },
   { name: "Cleaning Essentials", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245231/Cleaning_Essentials_q3lu4o.jpg", route: "p5" },
   { name: "Cold Drinks & Juices", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245230/Cold_Drinks_Juices_dace6t.jpg", route: "p7" },
-  { name: "Dairy & Bread & Eggs", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245230/dairy-milk-bread_awudzj.jpg", route: "p6" },
   { name: "Fruits & Vegetables", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245231/Fruits_Vegetables_vscfmd.jpg", route: "p8" },
   { name: "Home & Office", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245230/Home_Office_he0yvf.webp", route: "p9" },
   { name: "Masala, Oil & More", image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735245229/Masala_Oil_More_mgrjut.jpg", route: "p10" },

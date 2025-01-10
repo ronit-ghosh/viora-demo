@@ -14,7 +14,7 @@ const Download = () => {
                 <div className="flex flex-col md:flex-row items-center gap-8">
                     <div className="flex-1">
                         <Image
-                            src="https://res.cloudinary.com/drynqkitl/image/upload/v1735236699/download_bwim8r.png"
+                            src="https://res.cloudinary.com/drynqkitl/image/upload/v1736515039/download_yuzyw9.png"
                             alt="Viora App"
                             height={7000}
                             width={7000}

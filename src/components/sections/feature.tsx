@@ -27,7 +27,7 @@ const Feature = () => {
         {
             title: "Real-time Tracking",
             description: "Track your delivery in real-time with our advanced system",
-            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1735236698/realtimetracking_b43vje.jpg"
+            image: "https://res.cloudinary.com/drynqkitl/image/upload/v1736515665/real-time-tracking_hvmvfj.jpg"
         }
     ]
 
